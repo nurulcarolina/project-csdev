@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Login</title>
+    <!-- css bootstrap -->
+    <!-- css bootstrap -->
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style>
+          body{
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(1.jpg);
+        background-size: cover;
+        height: 100vh;
+        background-position: center;
+    }
+    .login-page{
+        width: 360px;
+        padding: 10% 0 0;
+        margin: auto;
+    }
+
+    .form{
+        position: relative;
+        z-index: 1;
+        background: rgba(7,40,195,0.8);
+        max-width: 360px;
+        margin: 0 auto 100px;
+        padding: 75px 45px 45px;
+        text-align: center;
+        border-radius: 15px;
+        height: 250px;
+    }
+
+    .form input{
+        font-family: sans-serif;
+        outline: 1;
+        background: #f2f2f2;
+        width: 100%;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+        color: silver;
+        border-radius: 5px;
+    }
+
+    .form button{
+        font-family: sans-serif;
+        text-transform: uppercase;
+        outline: 0;
+        background-color: slategray;
+        width: 100%;
+        border: 0;
+        padding: 15px;
+        color: #ffffff;
+        border-radius: 4px;
+    }
+
+    .form button:hover,
+    .form button:active{
+        background-color: steelblue;
+    }
+
+    .form .message{
+        margin: 15px;
+        color: aliceblue;
+        font-size: 12px;
+    }
+
+    .form .message{
+        color: #4caf50;
+        text-decoration: none;
+    }
+
+    .form .register-form {
+        display: none;
+    }
+</style>
+</head>
+<body>
+  <div class="login-page">
+    <div class="form">
+      <form class="register-form">
+        <input type="text" placeholder="Username">
+        <input type="text" placeholder="Password">
+        <input type="text" placeholder="Email">
+        <button>Create</button>
+        <p class="message">
+          Already Registered? <a href="">Login</a>
+        </p>
+      </form>
+      <form action="" class="login-form">
+        <input type="email" id="email" placeholder="Username">
+        <input type="pass" id="pass" placeholder="Password">
+        <button id="login" type="submit">Login</button>
+        <p class="message">
+          Not Registered? <a href="#">Register</a>
+        </p>
+      </form>
+    </div>
+  </div>
+<!-- js bootstrap -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js" ></script>
+<script type="text/javascript">
+    $(' .message a').click(function(){
+      $('form').animate({
+        height:"toggle",
+        opacity: "toggle"
+      }, "slow");
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!-- sweetalert script -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<!-- main.js -->
+<script src="main.js"></script>
+</body>
+</html>
